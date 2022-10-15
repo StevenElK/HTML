@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/*
+commento in css
+
+devo poi linkarlo con 
+
+<link hred="stile.css" rel="stylesheet" type="text/css" dentro>
+
+<style>
+	@import url(stile.css)
+	oppure scrivo css qui
+</style>
+
+collegamenti preferiti
+
+sconsigliato inline
+si cerca di evitare style
+si consiglia il link
+
+selettore universale
+*{
+	applico proprietà a tutti i tag
+}
+
+
+selettore di tipo    */
+h2{
+	color:green;
+	background:red;
+}
+/*
+selettore ID   con #ID  */
+#tagh4{
+	color:yellow;
+	background:black;
+}
+/* 
+Posso mettere un id su un tipo già modificato da css:
+l'id tag è più forte
+
+
+selettore class  con .classe    */
+.h{
+	background:pink;
+}
+/*
+unione tra elemento tipo di paragrafo e attributo class
+(valgono entrambi insieme)
+*/
+p.h{
+	color:blue;
+}
+/*
+posso mettere regole dettagliate
+con più punti vedendo sottoclassi
+*/
+p.h.sottoclasse{
+	color:red
+}
+
+/*
+il colore dei p dentro al contenitore con id contenitore avrà color white
+*/
+#contenitore p {color:white}
+/*
+padre > figlio
+seleziona tutti i figli diretti di un padre
+*/
+#contenitore>p {color:blue}
+
+/*
+fratello1 + fratello2
+seleziona un fratello2 affiancato ad un fratello1
+*/
+
+/*
+fratello1~fratello2
+seleziona tutti gli elementi fratello2 fratelli dell'elemento fratello1
+*/

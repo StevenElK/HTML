@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tabelle</title>
+</head>
+<body>
+<!-- 
+inizialmente le pagine web erano organizzate come tabelle
+però nasconono per organizzare i dati tramite il tag table 
+ -->
+ 
+ <table border=1 cellspacing=30 cellpadding=30> <!-- tabella -->
+ 	<!-- 
+ 	cellspacing spazio tra bordo esterno e celle interne
+ 	cellpadding spazio tra bordo delle celle e testo al loro interno
+ 	
+ 	caption
+ 	thead
+ 	tbody
+ 	tfoot 
+ 	-->
+ 	<tr> <!-- riga di una tabella -->
+ 		<td> riga 1 colonna 1
+ 		<td> riga 1 colonna 2 <img src="img/basket.png" width=15>
+ 		<td> riga 1 colonna 3
+ 	</tr>
+ 	<tr>
+ 		<td> riga 2 colonna 1 con inner table
+ 		<table border=1 cellpadding=20>
+			<td>
+				innercol1
+			</td>
+			<td>
+				innercol2
+			</td>
+ 		</table>
+ 		<td colspan=1> riga 2 colonna 2
+ 		<td rowspan=2> riga 2 e 3 colonna
+ 		</td>
+ 	</tr>
+ 	<tr> 
+ 		<td colspan=2> riga 3 colonna 1 e 2
+ 	</tr>
+ </table>
+</body>
+</html>
